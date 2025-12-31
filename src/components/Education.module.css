@@ -1,0 +1,141 @@
+.educationSection {
+    background:
+      radial-gradient(circle at top, rgba(255,255,255,0.06), transparent 40%),
+      linear-gradient(to bottom, #000, #050505, #000);
+    padding: 120px 24px;
+    color: #fff;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  /* HEADER */
+  .title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  
+  .subtitle {
+    font-size: 15px;
+    color: #bdbdbd;
+    margin-bottom: 70px;
+  }
+  
+  /* TIMELINE */
+  .timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: rgba(255,255,255,0.15);
+    transform: translateX(-50%);
+  }
+  
+  /* ITEM */
+  .timelineItem {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dot {
+    position: absolute;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 12px rgba(255,255,255,0.6);
+  }
+  
+  /* CARD */
+  .card {
+    width: 100%;
+    max-width: 420px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 28px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 30px rgba(255,255,255,0.12);
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  
+  .field {
+    font-size: 14px;
+    color: #d0d0d0;
+  }
+  
+  .institute {
+    font-size: 14px;
+    color: #bdbdbd;
+    margin: 12px 0;
+  }
+  
+  .duration {
+    font-size: 13px;
+    color: #9e9e9e;
+  }
+  
+  /* BADGE */
+  .badge {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .timeline::before {
+      left: 8px;
+    }
+  
+    .dot {
+      left: 8px;
+    }
+  
+    .timelineItem {
+      justify-content: flex-start;
+      padding-left: 30px;
+    }
+  
+    .card {
+      max-width: 100%;
+    }
+  
+    .title {
+      font-size: 32px;
+    }
+  }
+  

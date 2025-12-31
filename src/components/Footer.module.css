@@ -1,0 +1,126 @@
+.footer {
+    background: radial-gradient(
+        circle at top left,
+        rgba(80, 80, 120, 0.15),
+        transparent 60%
+      ),
+      #0b0b0f;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 80px 24px 30px;
+    color: #e5e5e5;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+  
+  /* Columns */
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  /* Brand */
+  .brand {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  
+  .role {
+    font-size: 0.95rem;
+    color: #cfcfcf;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #bdbdbd;
+  }
+  
+  /* Headings */
+  .heading {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 6px;
+  }
+  
+  /* Links */
+  .links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .links li {
+    margin-bottom: 8px;
+  }
+  
+  .links a {
+    color: #bdbdbd;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .links a:hover {
+    color: #ffffff;
+  }
+  
+  /* Social Icons */
+  .socials {
+    display: flex;
+    gap: 14px;
+  }
+  
+  .socials a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e5e5e5;
+    transition: all 0.25s ease;
+  }
+  
+  .socials a:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  /* Bottom Bar */
+  .bottom {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #9a9a9a;
+  }
+  
+  /* RESPONSIVE DESIGN */
+  
+  @media (max-width: 1024px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+  
+    .footer {
+      padding: 60px 20px 24px;
+    }
+  }
+  

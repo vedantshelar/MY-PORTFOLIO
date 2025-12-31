@@ -1,0 +1,112 @@
+.navbarSection {
+  border: 1px solid rgba(131, 131, 131, 0.304);
+  color: white;
+  width: 80%;
+  align-self: center;
+  position: fixed;
+  z-index: 100;
+  top: 25px;
+  border-radius: 50px;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* GLASS EFFECT */
+  background: rgba(0, 0, 0, 0.235);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.logo{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menuSection{
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  color: rgba(255, 255, 255, 0.644);
+}
+
+.menu{
+  color: rgba(255, 255, 255, 0.644);
+  text-decoration: none;
+}
+
+.bar{
+  display: none; 
+  color: white;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.mobileNavBar{
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: -100%;
+  transition: all 0.3s ease-in-out 0s;
+  background-color: black;
+}
+
+@media (max-width: 860px) {
+
+  .navbarSection {
+    width: 95%;
+  }
+  .bar{
+    display: block; 
+  }
+  .menuSection{
+    display: none;
+  }
+
+  .mobileNavBar{
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .activeMobileNavBar{
+    right: 0%;
+  }
+
+  .cross{
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    width: 100%;
+    text-align: end;
+    padding-top: 10px;
+    padding-right: 15px;
+  }
+
+  .mobileMenuSection{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 20px;
+    padding: 20px 0px;
+  }
+
+  .mobileMenu{
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.644);
+    text-decoration: none;
+  }
+}
