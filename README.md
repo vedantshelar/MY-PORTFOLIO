@@ -1,16 +1,38 @@
-# React + Vite
+# 🌐 Vedant Shelar — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Live Portfolio: https://vedantshelar-portfolio.netlify.app/
 
-Currently, two official plugins are available:
+This repository contains the source code for my personal developer portfolio website.  
+The portfolio showcases my projects, skills, achievements, and experience as a **Full Stack MERN Developer**, built with a modern and minimal UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- React.js
+  
+### Backend / Serverless
+- Netlify Functions
+- Natural.js (for chatbot intent classification)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📬 Contact
+
+If you’d like to connect or collaborate:
+
+- 🌐 Portfolio: https://vedantshelar-portfolio.netlify.app/
+- 💼 LinkedIn: https://www.linkedin.com/in/vedant-shelar
+- 🐙 GitHub: https://github.com/vedantshelar
+
+---
+
+## 📄 License
+
+This project is open-source and available for learning and inspiration.  
+Feel free to explore, but please do not copy the design or content directly without permission.
+
+---
+
+⭐ If you like this portfolio, feel free to give the repository a star!
