@@ -2,7 +2,63 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
     portfolio: {
-        projects: [{
+        projects: [
+          {
+            _id: 0,
+            title: "Intellexa – AI Based Decision Support System",
+            description:
+              "Intellexa is an AI-powered decision support system designed to help businesses transform raw data into actionable insights. It enables users to upload CSV or Excel datasets and instantly receive interactive visualizations, predictive analytics, risk detection, and AI-driven recommendations. The platform also includes an AI assistant that allows users to ask business-related questions and get intelligent responses based on their data, making decision-making faster, smarter, and data-driven.",
+          
+            techStack: [
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "React.js",
+              "Redux Toolkit",
+              "Node.js",
+              "Express.js",
+              "MongoDB",
+              "Python",
+              "Flask",
+              "Scikit-learn",
+              "Groq API"
+            ],
+          
+            liveDemoLink: "https://intellexaa.netlify.app/",
+            codeLink: "https://github.com/vedantshelar/INTELLEXA",
+          
+            features: [
+              "Upload business data using CSV or Excel files",
+              "Automatic data preprocessing and transformation",
+              "Interactive dashboards with Line, Bar, Pie, and Area charts",
+              "AI-based revenue prediction for next 30 days",
+              "KPI analysis for last 7, 30, and 365 days",
+              "Customer insights including retention and behavior analysis",
+              "AI-generated insights, risk alerts, and recommendations",
+              "Business risk detection (drop in revenue, churn signals)",
+              "AI Assistant (chatbot) for asking data-related business questions",
+              "Secure authentication using JWT and cookies",
+              "Dataset management (upload, view, delete)",
+              "Modern responsive UI (SaaS dashboard design)",
+              "Full-stack integration (Frontend + Backend + ML Service)",
+              "Real-time data processing pipeline from upload → AI → visualization"
+            ],
+          
+            thumbnail: "/thumbanails/intellexa.png",
+          
+            screenshots: [
+              "/projectScreenshots/intellexa/ss1.png",
+              "/projectScreenshots/intellexa/ss2.png",
+              "/projectScreenshots/intellexa/ss3.png",
+              "/projectScreenshots/intellexa/ss4.png",
+              "/projectScreenshots/intellexa/ss5.png",
+              "/projectScreenshots/intellexa/ss6.png",
+              "/projectScreenshots/intellexa/ss7.png",
+              "/projectScreenshots/intellexa/ss8.png",
+              "/projectScreenshots/intellexa/ss9.png"
+            ]
+          }
+          ,{
             _id: 1,
             title: "QR Code-Based Restaurant Ordering System",
             description:

@@ -8,7 +8,8 @@ const techData = {
         { name: "JavaScript", icon: "/tech/javascript.png" },
         { name: "C", icon: "/tech/c.png" },
         { name: "C++", icon: "/tech/cPuls.png" },
-        { name: "Java", icon: "/tech/java.png" }
+        { name: "Java", icon: "/tech/java.png" },
+        { name: "Python", icon: "/tech/python.png" }
     ],
     frameworks: [
         { name: "React.js", icon: "/tech/reactjs.png" },

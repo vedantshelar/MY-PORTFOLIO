@@ -1,6 +1,16 @@
 import styles from "./About.module.css";
+import { useSelector } from 'react-redux'
 
 export default function About() {
+
+  let projectLength = useSelector((state)=>{
+    return state.portfolio.portfolio.projects.length;
+  })
+
+  let achievementsLength = useSelector((state)=>{
+    return state.portfolio.portfolio.achievements.length;
+  })
+
   return (
     <section id="about" className={styles.about}>
       <div className={styles.container}>
@@ -43,15 +53,15 @@ export default function About() {
           {/* Stats */}
           <div className={styles.stats}>
             <div>
-              <h3>12+</h3>
+              <h3>13+</h3>
               <p>Prg Languages</p>
             </div>
             <div>
-              <h3>5+</h3>
+              <h3>{projectLength}+</h3>
               <p>Projects</p>
             </div>
             <div>
-              <h3>4+</h3>
+              <h3>{achievementsLength}+</h3>
               <p>Achievements</p>
             </div>
           </div>
